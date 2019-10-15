@@ -10,26 +10,28 @@
 
     <Button
         android:id="@+id/button_1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="138dp"
+        android:layout_height="60dp"
         android:text="@string/login"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/button_2"
-        app:layout_constraintHorizontal_bias="0.591"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.886" />
+        app:layout_constraintVertical_bias="0.733" />
 
     <Button
         android:id="@+id/button_2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="138dp"
+        android:layout_height="60dp"
         android:layout_marginEnd="96dp"
         android:text="@string/register"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.768"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.886" />
+        app:layout_constraintVertical_bias="0.868" />
 
     <ImageView
         android:id="@+id/waller_2"
@@ -40,5 +42,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.503"
         app:srcCompat="@drawable/wallpaper_2" />
 </androidx.constraintlayout.widget.ConstraintLayout>

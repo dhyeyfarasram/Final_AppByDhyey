@@ -26,14 +26,14 @@ import com.ceng319.myapplication.R;
 import com.ceng319.myapplication.ui.login.LoginViewModel;
 import com.ceng319.myapplication.ui.login.LoginViewModelFactory;
 
-public class LoginActivity extends AppCompatActivity {
+class LoginActivity extends AppCompatActivity {
 
     private LoginViewModel loginViewModel;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login);
+        setContentView(R.layout.activity__login);
         loginViewModel = ViewModelProviders.of(this, new LoginViewModelFactory())
                 .get(LoginViewModel.class);
 

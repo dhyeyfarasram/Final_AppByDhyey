@@ -7,24 +7,27 @@
     tools:context=".activity_launch">
 
     <ImageView
-        android:id="@+id/wallpaper"
-        android:layout_width="563dp"
-        android:layout_height="737dp"
+        android:id="@+id/imageView"
+        android:layout_width="827dp"
+        android:layout_height="793dp"
+        android:contentDescription="TODO"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/wallpaper_1"
-        android:contentDescription="@string/todo" />
+        app:layout_constraintVertical_bias="0.887"
+        app:srcCompat="@drawable/wallpaper_3" />
 
     <TextView
-        android:id="@+id/msg"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/welcome_to_scaling_app"
-        app:layout_constraintBottom_toBottomOf="@+id/wallpaper"
+        android:id="@+id/welcome_to_scaling_app"
+        android:layout_width="218dp"
+        android:layout_height="34dp"
+        android:autoText="false"
+        android:background="#FF0000"
+        android:backgroundTint="#00FFF9F9"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/wallpaper" />
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

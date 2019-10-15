@@ -12,39 +12,35 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Button;
 
-import com.ceng319.myapplication.ui.login.LoginActivity;
-
 public class MainActivity extends AppCompatActivity {
 
 
-    Button btnLogin = (Button) findViewById(R.id.button_1);
-    Button btnRegister= (Button) findViewById(R.id.button_2);
-
-    /*View.OnClickListener handler = new View.OnClickListener(){
-
-        public void onClick(View v) {
-
-            if(v==btnLogin){
-                setContentView(R.layout.activity_login);
-                // doStuff
-               // Intent intentMain = new Intent(this, LoginActivity.class);
-                //startActivity(intentMain);
-            }
-
-            if(v==btnRegister){
-
-                // doStuff
-                //Intent intentApp = new Intent(this,.class);
-                //startActivity(intentApp);
-            }
-        }
-    };*/
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
+
+        View.OnClickListener handler = new View.OnClickListener(){
+            public void onClick(View v) {
+
+                switch (v.getId()) {
+
+                    case R.id.button_1:
+                        setContentView(R.layout.activity__login);
+                        break;
+                    case R.id.button_2:
+                       // setContentView(R.layout.activity_Register);
+                        break;
+                }
+            }
+        };
+
+        findViewById(R.id.button_1).setOnClickListener(handler);
+        findViewById(R.id.button_2).setOnClickListener(handler);
+
     }
 
     @Override
