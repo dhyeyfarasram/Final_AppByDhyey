@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">GHSM</string>
+    <string name="app_name">Plants monitoring system</string>
     <string name="action_settings">Settings</string>
     <string name="todo">todo</string>
     <string name="welcome_to_scaling_app">Monitor your plants for anywhere</string>
@@ -17,4 +17,8 @@
     <string name="waller_2">TODO</string>
     <string name="register">Register</string>
     <string name="title_activity__login">Sign in</string>
+    <string name="login2">Forgot password</string>
+    <string name="waller_3">waller_2</string>
+    <string name="name">Name</string>
+    <string name="email">Email</string>
 </resources>

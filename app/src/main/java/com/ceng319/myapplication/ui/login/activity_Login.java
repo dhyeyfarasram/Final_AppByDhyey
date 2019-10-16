@@ -23,8 +23,6 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.ceng319.myapplication.R;
-import com.ceng319.myapplication.ui.login.LoginViewModel;
-import com.ceng319.myapplication.ui.login.LoginViewModelFactory;
 
 class LoginActivity extends AppCompatActivity {
 
@@ -40,7 +38,7 @@ class LoginActivity extends AppCompatActivity {
         final EditText usernameEditText = findViewById(R.id.username);
         final EditText passwordEditText = findViewById(R.id.password);
         final Button loginButton = findViewById(R.id.login);
-        final ProgressBar loadingProgressBar = findViewById(R.id.loading);
+        final ProgressBar loadingProgressBar = findViewById(R.id.forgot);
 
         loginViewModel.getLoginFormState().observe(this, new Observer<LoginFormState>() {
             @Override

@@ -32,7 +32,8 @@ public class MainActivity extends AppCompatActivity {
                         setContentView(R.layout.activity__login);
                         break;
                     case R.id.button_2:
-                       // setContentView(R.layout.activity_Register);
+                    case R.id.button2:
+                        setContentView(R.layout.activity_register);
                         break;
                 }
             }
